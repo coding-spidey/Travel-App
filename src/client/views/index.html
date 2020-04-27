@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <title>Travel App</title>
+</head>
+<body>
+    <div class="container">
+    <div class="header" style="background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190622/ourmid/pngtree-travel-flat-travel-banner-background-image_208104.jpg);"><h1>Travel App</h1></div>
+    <div class="main">
+        <h3>Enter the travel details below :</h3>
+        <form onsubmit="return Client.handleSubmit(event)">
+                <label for="cityName">Enter the name of city you are travelling to : </label>
+                <input type="text" id="cityName" name="cityName" value="" placeholder="City Name"><br><br>
+                <label for="date">Enter Your date of travel : </label>
+                <input type="date" id="date" name="date" value=""><br><br>
+                <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        <p>This is a prototype</p>
+    </div>
+    </div>
+    <!-- <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script> -->
+</body>
+</html>

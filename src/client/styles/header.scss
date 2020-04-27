@@ -1,0 +1,13 @@
+.header {
+    background-size: contain;
+    text-align: center;
+    grid-area: "hd";
+    color: black;
+    img {
+        height: 200px;
+    }
+    h1 {
+        padding-top: 80px;
+        font-size: 40px;
+    }
+}
