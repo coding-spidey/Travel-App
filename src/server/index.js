@@ -27,13 +27,14 @@ app.listen(8081, function () {
 const cordUsername = process.env.cordUsername
 const weatherKey = process.env.WEATHER_KEY
 const pixabayKey = process.env.PIXABAY_KEY
+const credentails = {
+    cordUsername,
+    weatherKey,
+    pixabayKey
+}
 
 app.get('/credentails', sendData)
 function sendData(req, res) {
     console.log("---sending credentials---")
-    res.send({
-        cordUsername,
-        weatherKey,
-        pixabayKey
-    })
+    res.send(credentails)
 }
