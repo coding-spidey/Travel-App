@@ -17,9 +17,13 @@ function handleSubmit(event) {
         const weatherData = await extractCoordinate(cityName, date, cordUsername, weatherKey)
         const imgUrl = await getImage(cityName, pixabayKey)
         console.log("---Updating UI---")
-        main.innerHTML = "<div class='card'><div class='img'></div><div class='info'></div></div>"
+        main.innerHTML = "<div class='card'><div class='img'></div><div class='info'></div></div><button type='button' id='reload'>Click here to resubmit the form</button>"
         document.querySelector('.img').innerHTML = `<img src=${imgUrl}/>`
         document.querySelector('.info').innerHTML = `<h4>${cityName}, ${countryName}</h4><br><p>Your travel date is : ${date}<br/>The weather during your travel will be ${weatherData.description}, and the temperature would be ${weatherData.temp}° Celsius</p>`
+        const reload = document.getElementById('reload')
+        reload.addEventListener('click', ()=>{
+        location.reload()
+    })
     })
 }
 async function extractCoordinate(destination, travelDate, cordUsername, weatherKey) {
