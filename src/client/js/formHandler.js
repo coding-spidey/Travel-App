@@ -7,6 +7,10 @@ function handleSubmit(event) {
     const cityName = document.getElementById('cityName').value; //All the const needed for the function are created here
     const date = document.getElementById('date').value;
     const returningDate = document.getElementById('endDate').value
+    if(cityName=="") {
+        alert('Please Enter Your Location')
+        return
+    }
     const endDate = new Date(returningDate);
     const currentDate = new Date()
     const main = document.querySelector('.main')
