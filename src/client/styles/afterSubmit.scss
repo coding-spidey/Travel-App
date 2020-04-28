@@ -1,27 +1,24 @@
 .card {
     margin: 0 auto;
-    width: 1100px;
-    height: 400px;
+    width: 300px;
     border: 2px solid white;
     display: flex;
     flex-direction: column;
 }
 .img {
-    width: 490px;
+    width: 290px;
     margin : 10px;
     background-size: contain;
     align-self: center;
     margin-right: 0px;
     img {
-        width : 490px;
+        width : 290px;
         height: 350px;
     }
 }
 .info {
-    padding-left: 15px;
-    margin-top: 50px;
-    margin-left : 10px;
-    width: 590px;
+    margin-top: 10px;
+    width: 300px;
     height: 300px;
     text-align: start;
     p {
@@ -30,9 +27,21 @@
 }
 @media (min-width : 900px) {
     .card {
+        height: 400px;
+        width: 1100px;
         flex-direction: row;
     }
+    .img {
+        width: 490px;
+        img {
+            width : 490px
+        }
+    }
     .info {
+        padding-left: 15px;
+        margin-top: 50px;
+        margin-left : 10px;
+        width: 590px;
         border-left: 1px solid rgb(226, 209, 209); 
     }
 }
