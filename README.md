@@ -1,6 +1,13 @@
 # Travel App
 
-This app processes user data and tells the temperature and weather forecast of the place the user is visiting to.
+This app processes user data and tells the temperature and weather forecast of the place the user is visiting to. This app uses node.js to create a server and webpack to compress all the files. This app uses three different api to fetch data, they are :
+
+Geolocation Api : To get the co-ordinates of the place.
+
+Weatherbit Api : To get the weather forecast.
+
+Pixabay Api : To get the image of the destination.
+- - - -
 
 # Instructions to set-up
 
